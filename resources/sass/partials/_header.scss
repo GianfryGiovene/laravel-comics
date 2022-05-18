@@ -1,0 +1,43 @@
+header{
+    & >div:first-child{
+        background-color: #0082f9;
+        padding: 5px 0;
+        .container.top{
+            gap: 20px;
+            display: flex;
+            justify-content: end;
+        }
+
+    }
+
+    & > div:nth-child(2){
+        .container.bottom{
+            padding: 10px 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border: 1px solid red;
+            img{
+                width: 70px;
+            }
+            ul{
+                display: flex;
+                list-style-type: none;
+                gap: 20px;
+                a{
+                    
+                }
+            }
+        }
+    }
+
+    & > div:last-child{
+        height: 400px;
+        overflow: hidden;
+    }
+    .container{
+        max-width: 1200px;
+        margin: auto;
+    }
+
+}

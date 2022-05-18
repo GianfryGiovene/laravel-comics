@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header > div:first-child {
+  background-color: #0082f9;
+  padding: 5px 0;
+}
+
+header > div:first-child .container.top {
+  gap: 20px;
+  display: flex;
+  justify-content: end;
+}
+
+header > div:nth-child(2) .container.bottom {
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid red;
+}
+
+header > div:nth-child(2) .container.bottom img {
+  width: 70px;
+}
+
+header > div:nth-child(2) .container.bottom ul {
+  display: flex;
+  list-style-type: none;
+  gap: 20px;
+}
+
+header > div:last-child {
+  height: 400px;
+  overflow: hidden;
+}
+
+header .container {
+  max-width: 1200px;
+  margin: auto;
+}
+
