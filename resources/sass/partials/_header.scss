@@ -16,7 +16,6 @@ header{
             display: flex;
             align-items: center;
             justify-content: space-between;
-            border: 1px solid red;
             img{
                 width: 70px;
             }
@@ -25,7 +24,7 @@ header{
                 list-style-type: none;
                 gap: 20px;
                 a{
-                    
+                    text-decoration: none;
                 }
             }
         }

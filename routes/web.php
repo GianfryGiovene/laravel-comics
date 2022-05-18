@@ -16,3 +16,8 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('layouts.master');
 });
+
+Route::get('/comics', function () {
+    $comics = config('comics');
+    return view('partials.series', ["comics"=>$comics]);
+});

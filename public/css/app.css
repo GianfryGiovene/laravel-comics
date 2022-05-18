@@ -20,7 +20,6 @@ header > div:nth-child(2) .container.bottom {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border: 1px solid red;
 }
 
 header > div:nth-child(2) .container.bottom img {
@@ -33,6 +32,10 @@ header > div:nth-child(2) .container.bottom ul {
   gap: 20px;
 }
 
+header > div:nth-child(2) .container.bottom ul a {
+  text-decoration: none;
+}
+
 header > div:last-child {
   height: 400px;
   overflow: hidden;
@@ -41,5 +44,40 @@ header > div:last-child {
 header .container {
   max-width: 1200px;
   margin: auto;
+}
+
+main section:first-child {
+  background-color: #1c1c1c;
+}
+
+main section:first-child .container {
+  max-width: 1200px;
+  margin: auto;
+  position: relative;
+}
+
+main section:first-child .container h2 {
+  background-color: #0082f9;
+  position: absolute;
+  padding: 10px 15px;
+  top: -25px;
+  left: -20px;
+}
+
+main section:first-child .container #comics-container {
+  padding: 50px 0 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+main section:first-child .container #comics-container .card {
+  width: 14.2857142857%;
+}
+
+main section:first-child .container #comics-container .card a div img {
+  width: 100%;
 }
 

@@ -1,0 +1,38 @@
+main{
+    section:first-child{
+        background-color: #1c1c1c;
+        .container{
+            max-width: 1200px;
+            margin: auto;
+            position: relative;
+            h2{
+                background-color: #0082f9;
+                position: absolute;
+                padding: 10px 15px;
+                top: -25px;
+                left: -20px;
+            }
+            #comics-container{
+                padding: 50px 0 20px;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+                gap: 20px;
+                .card{
+                    width: calc(100% / 7);
+                    a{
+                        div{
+                            img{
+                                width: 100%;
+                            }
+                        }
+                        h3{
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
