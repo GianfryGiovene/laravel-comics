@@ -14,10 +14,17 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('layouts.master');
+    $navBar = config('headerNav');
+    $footerList = config('footerList');
+    $followUs = config('footerFollowUs');
+    return view('layouts.master',["key"=>$navBar, "footerL"=>$footerList, "followUs"=>$followUs]);
 });
 
 Route::get('/comics', function () {
     $comics = config('comics');
-    return view('partials.series', ["comics"=>$comics]);
+    $navBar = config('headerNav');
+    $shopList = config('shopList');
+    $footerList = config('footerList');
+    $followUs = config('footerFollowUs');
+    return view('partials.series', ["comics"=>$comics,"key"=>$navBar,"shopL"=>$shopList,"footerL"=>$footerList,"followUs"=>$followUs]);
 });

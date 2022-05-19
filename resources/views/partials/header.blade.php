@@ -7,25 +7,18 @@
     </div>
     <div>
         <div class="container bottom">
-            <img src="{{asset("images/dc-logo.png")}}" alt="">
+            <img src="{{ asset('images/dc-logo.png') }}" alt="">
             <nav>
                 <ul>
-                    <li><a href="">CHARACTERS</a></li>
-                    <li><a href="comics">COMICS</a></li>
-                    <li><a href="">MOVIES</a></li>
-                    <li><a href="">TV</a></li>
-                    <li><a href="">GAMES</a></li>
-                    <li><a href="">COLLECTIBLES</a></li>
-                    <li><a href="">VIDEOS</a></li>
-                    <li><a href="">FANS</a></li>
-                    <li><a href="">NEWS</a></li>
-                    <li><a href="">SHOP</a></li>
+                    @foreach ($key as $item)
+                        <li><a href="{{ $item['url'] }}">{{ $item['text'] }}</a></li>
+                    @endforeach
                     <li><input type="text" name="" id="" placeholder="Search"></li>
                 </ul>
             </nav>
         </div>
     </div>
     <div id="jumbo-tron">
-        <img src="{{asset("images/jumbotron.jpg")}}" alt="">
+        <img src="{{ asset('images/jumbotron.jpg') }}" alt="">
     </div>
 </header>

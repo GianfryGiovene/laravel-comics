@@ -142,22 +142,25 @@ footer a {
 
 footer > div:first-child {
   background-image: url("/images/footer-bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 350px;
 }
 
-footer > div:first-child .container {
+footer > div:first-child > .container {
   max-width: 1200px;
   margin: auto;
   display: flex;
-  height: 300px;
+  height: 100%;
 }
 
-footer > div:first-child .container > div:first-child {
+footer > div:first-child > .container > div:first-child {
   display: flex;
   flex-direction: column;
   padding: 40px 0;
 }
 
-footer > div:first-child .container > div:first-child > div {
+footer > div:first-child > .container > div:first-child > div {
   height: 300px;
   display: flex;
   flex-direction: column;
@@ -166,11 +169,11 @@ footer > div:first-child .container > div:first-child > div {
   gap: 20px;
 }
 
-footer > div:first-child .container > div:first-child > div ul {
+footer > div:first-child > .container > div:first-child > div ul {
   list-style-type: none;
 }
 
-footer > div:first-child .container > div:last-child img {
+footer > div:first-child > .container > div:last-child img {
   width: 500px;
   -o-object-fit: cover;
      object-fit: cover;

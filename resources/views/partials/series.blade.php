@@ -1,38 +1,41 @@
 @extends('layouts.master')
 
-@section ('title','Series')
+@section('title', 'Series')
 
 @section('series-content')
-    
-        <div>
-            <div class="container">
-                <h2>CURRENT SERIES</h2>
-                <div id='comics-container'>
-                    @foreach($comics as $comic)
-                        <div class="card">
-                            <a href="#">
-                                <div>
-                                    <img src="{{$comic['thumb']}}" alt="{{$comic['title']}}">
-                                </div>
-                                <h4>{{$comic['series']}}</h4>
-                            </a>
-                        </div>
-                    @endforeach
-                </div>
-                <div>
-                    <h3><a href="{{asset("images/dc-logo.png")}}">LOAD MORE</a></h3>
-                </div>
+
+    <div>
+        <div class="container">
+            <h2>CURRENT SERIES</h2>
+            <div id='comics-container'>
+                @foreach ($comics as $comic)
+                    <div class="card">
+                        <a href="#">
+                            <div>
+                                <img src="{{ $comic['thumb'] }}" alt="{{ $comic['title'] }}">
+                            </div>
+                            <h4>{{ $comic['series'] }}</h4>
+                        </a>
+                    </div>
+                @endforeach
+            </div>
+            <div>
+                <h3><a href="{{ asset('images/dc-logo.png') }}">LOAD MORE</a></h3>
             </div>
         </div>
-        <div>
-            <ul>
+    </div>
+    <div>
+        <ul>
+            @foreach ($shopL as $item)
                 <li>
                     <a href="">
-                        <img src="{{asset("images/dc-logo.png")}}" alt="">
-                        <span>DIGITAL COMICS</span>
+                        <img src="{{ asset($item['url']) }}" alt="">
+                        <span>{{ $item['text'] }}</span>
                     </a>
                 </li>
-                <li>
+            @endforeach
+
+            {{-- <li>
                     <a href="">
                         <img src="{{asset("images/dc-logo.png")}}" alt="">
                         <span>DC MERCHANDISE</span>
@@ -55,8 +58,8 @@
                         <img src="{{asset("images/dc-logo.png")}}" alt="">
                         <span>DC POWER VISA</span>
                     </a>
-                </li>
-            </ul>
-        </div>
-    
+                </li> --}}
+        </ul>
+    </div>
+
 @endsection
