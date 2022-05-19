@@ -31,9 +31,6 @@ sempre lo stesso dettaglio passandolo come "data" alla view.
             
         </section>
     </main>
-    <footer>
-        <div></div>
-        <div></div>
-    </footer>
+    @include('partials/footer')
 </body>
 </html>

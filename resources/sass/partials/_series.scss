@@ -1,35 +1,76 @@
 main{
     section:first-child{
-        background-color: #1c1c1c;
-        .container{
-            max-width: 1200px;
-            margin: auto;
-            position: relative;
-            h2{
-                background-color: #0082f9;
-                position: absolute;
-                padding: 10px 15px;
-                top: -25px;
-                left: -20px;
-            }
-            #comics-container{
-                padding: 50px 0 20px;
-                display: flex;
-                flex-wrap: wrap;
-                justify-content: center;
-                align-items: center;
-                gap: 20px;
-                .card{
-                    width: calc(100% / 7);
-                    a{
-                        div{
-                            img{
-                                width: 100%;
+        & > div:first-child{
+            color: #fff;
+            background-color: #1c1c1c;
+            .container{
+                max-width: 1200px;
+                margin: auto;
+                position: relative;
+                a{
+                    text-decoration: none;
+                    color: #fff;
+                }
+                h2{
+                    background-color: #0082f9;
+                    position: absolute;
+                    padding: 10px 15px;
+                    top: -20px;
+                }
+                #comics-container{
+                    padding: 50px 0 20px;
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 20px;
+                    .card{
+                        width: calc(100% / 7);
+                        a{
+                            div{
+                                overflow-y: hidden;
+                                height: 180px;
+                                img{
+                                    width: 100%;
+                                    
+
+                                }
+                            }
+                            h4{
+                                padding: 10px 0;
                             }
                         }
-                        h3{
-
-                        }
+                    }
+                }
+                & > div{
+                    display: flex;
+                    justify-content: center;
+                    padding-bottom: 20px;
+                    h3 {
+                        padding: 10px 35px;
+                        text-align: center;
+                        background-color: #0082f9;
+                        
+                    }
+                }
+            }
+        }
+        & > div:last-child{
+            background-color: #0082f9;
+            padding: 30px;
+            ul{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                list-style-type: none;
+                gap: 20px;
+                a{
+                    display: flex;
+                    align-items: center;
+                    gap: 5px;
+                    text-decoration: none;
+                    img{
+                        width: 40px;
                     }
                 }
             }

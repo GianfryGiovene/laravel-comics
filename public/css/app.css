@@ -46,25 +46,30 @@ header .container {
   margin: auto;
 }
 
-main section:first-child {
+main section:first-child > div:first-child {
+  color: #fff;
   background-color: #1c1c1c;
 }
 
-main section:first-child .container {
+main section:first-child > div:first-child .container {
   max-width: 1200px;
   margin: auto;
   position: relative;
 }
 
-main section:first-child .container h2 {
+main section:first-child > div:first-child .container a {
+  text-decoration: none;
+  color: #fff;
+}
+
+main section:first-child > div:first-child .container h2 {
   background-color: #0082f9;
   position: absolute;
   padding: 10px 15px;
-  top: -25px;
-  left: -20px;
+  top: -20px;
 }
 
-main section:first-child .container #comics-container {
+main section:first-child > div:first-child .container #comics-container {
   padding: 50px 0 20px;
   display: flex;
   flex-wrap: wrap;
@@ -73,11 +78,128 @@ main section:first-child .container #comics-container {
   gap: 20px;
 }
 
-main section:first-child .container #comics-container .card {
+main section:first-child > div:first-child .container #comics-container .card {
   width: 14.2857142857%;
 }
 
-main section:first-child .container #comics-container .card a div img {
+main section:first-child > div:first-child .container #comics-container .card a div {
+  overflow-y: hidden;
+  height: 180px;
+}
+
+main section:first-child > div:first-child .container #comics-container .card a div img {
   width: 100%;
+}
+
+main section:first-child > div:first-child .container #comics-container .card a h4 {
+  padding: 10px 0;
+}
+
+main section:first-child > div:first-child .container > div {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 20px;
+}
+
+main section:first-child > div:first-child .container > div h3 {
+  padding: 10px 35px;
+  text-align: center;
+  background-color: #0082f9;
+}
+
+main section:first-child > div:last-child {
+  background-color: #0082f9;
+  padding: 30px;
+}
+
+main section:first-child > div:last-child ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+  gap: 20px;
+}
+
+main section:first-child > div:last-child ul a {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  text-decoration: none;
+}
+
+main section:first-child > div:last-child ul a img {
+  width: 40px;
+}
+
+footer {
+  color: #fff;
+}
+
+footer a {
+  text-decoration: none;
+  color: #fff;
+}
+
+footer > div:first-child {
+  background-color: red;
+}
+
+footer > div:first-child .container {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  height: 300px;
+}
+
+footer > div:first-child .container > div:first-child {
+  display: flex;
+  flex-direction: column;
+  padding: 40px 0;
+}
+
+footer > div:first-child .container > div:first-child > div {
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: start;
+  gap: 20px;
+}
+
+footer > div:first-child .container > div:first-child > div ul {
+  list-style-type: none;
+}
+
+footer > div:first-child .container > div:last-child img {
+  width: 500px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 100%;
+}
+
+footer > div:last-child {
+  background-color: #303030;
+}
+
+footer > div:last-child .container {
+  padding: 40px 0;
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer > div:last-child .container button {
+  border: 2px solid #0082f9;
+  padding: 10px;
+  background: none;
+  color: #fff;
+}
+
+footer > div:last-child .container ul {
+  display: flex;
+  list-style-type: none;
+  gap: 20px;
 }
 
