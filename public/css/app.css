@@ -141,7 +141,7 @@ footer a {
 }
 
 footer > div:first-child {
-  background-color: red;
+  background-image: url("/images/footer-bg.jpg");
 }
 
 footer > div:first-child .container {
