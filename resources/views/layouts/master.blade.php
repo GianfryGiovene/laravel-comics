@@ -35,7 +35,7 @@ al clic su un item della lista passate un parametro per poter visualizzare dinam
             @yield('series-content')
         </section>
         <section>
-
+            @yield('comic-content')
         </section>
     </main>
     @include('partials/footer')

@@ -36,11 +36,6 @@
                         </a>
                     </li>
                 @endforeach
-
-                {{-- <li><a href="https://www.twitter.com">bbb</a></li>
-                <li><a href="https://www.youtube.com">ccc</a></li>
-                <li><a href="https://www.facebook.com">ddd</a></li>
-                <li><a href="https://www.facebook.com">eee</a></li> --}}
             </ul>
         </div>
     </div>

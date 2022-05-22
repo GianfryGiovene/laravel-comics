@@ -204,5 +204,75 @@ footer > div:last-child .container ul {
   display: flex;
   list-style-type: none;
   gap: 20px;
+  align-items: center;
+}
+
+#comic > div:first-child {
+  background-color: #0082f9;
+}
+
+#comic > div:first-child .container {
+  max-width: 1200px;
+  position: relative;
+  margin: auto;
+  height: 50px;
+}
+
+#comic > div:first-child .container > div {
+  position: absolute;
+  height: 291px;
+  bottom: 20px;
+}
+
+#comic > div:first-child .container > div img {
+  position: relative;
+}
+
+#comic > div:first-child .container > div span {
+  position: absolute;
+  background-color: #01a8d9;
+}
+
+#comic > div:first-child .container > div > #comic-book {
+  top: 0px;
+  left: 0;
+}
+
+#comic > div:first-child .container > div > span:last-child {
+  text-align: center;
+  width: 100%;
+  bottom: 0;
+}
+
+#comic > div:last-child {
+  max-width: 1200px;
+  margin: auto;
+  background-color: #fff;
+  display: flex;
+  gap: 10px;
+  border: 1px solid green;
+}
+
+#comic > div:last-child > div:first-child {
+  border: 1px solid red;
+}
+
+#comic > div:last-child > div:first-child #price-availability {
+  color: #fff;
+  display: flex;
+  background-color: #55ba59;
+  padding: 10px 0;
+}
+
+#comic > div:last-child > div:first-child #price-availability > div:first-child {
+  display: flex;
+  width: 80%;
+  justify-content: space-between;
+  padding: 0 30px;
+}
+
+#comic > div:last-child > div:first-child #price-availability > div:last-child {
+  text-align: center;
+  width: 20%;
 }
 
