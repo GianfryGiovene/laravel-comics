@@ -6,33 +6,26 @@
             position: relative;
             margin: auto;
             height: 50px;
-
             & > div{
                 position: absolute;
                 height: 291px;
                 bottom: 20px;
                 img{
                     position: relative;
-
                 }
                 span{
                     position: absolute;
                     background-color: #01a8d9;
-
                 }
                 & > #comic-book{
                     top:0px;
                     left: 0;
-
-
                 }
                 & > span:last-child{
                     text-align: center;
                     width: 100%;
                     bottom: 0;
-
                 }
-
             }
         }
     }
@@ -42,15 +35,17 @@
             margin: auto;
             background-color: #fff;
             display: flex;
-            gap: 10px;
+            gap: 20px;
+            justify-content: space-between;
+
             border: 1px solid green;
             & > div:first-child{
-                border: 1px solid red;
                 #price-availability{
                     color: #fff;
                     display: flex;
+                    align-items: center;
                     background-color: #55ba59;
-                    padding: 10px 0 ;
+
                     & > div:first-child{
                         display: flex;
                         width: 80%;
@@ -58,9 +53,14 @@
                         padding: 0 30px;
                     }
                     & > div:last-child{
+                        border-left: 1px solid gray;
                         text-align: center;
+                        padding: 10px 0 ;
                         width: 20%;
                     }
+                }
+                p{
+                    margin: 20px 0 ;
                 }
             }
 

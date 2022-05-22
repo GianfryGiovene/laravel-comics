@@ -249,19 +249,16 @@ footer > div:last-child .container ul {
   margin: auto;
   background-color: #fff;
   display: flex;
-  gap: 10px;
+  gap: 20px;
+  justify-content: space-between;
   border: 1px solid green;
-}
-
-#comic > div:last-child > div:first-child {
-  border: 1px solid red;
 }
 
 #comic > div:last-child > div:first-child #price-availability {
   color: #fff;
   display: flex;
+  align-items: center;
   background-color: #55ba59;
-  padding: 10px 0;
 }
 
 #comic > div:last-child > div:first-child #price-availability > div:first-child {
@@ -272,7 +269,13 @@ footer > div:last-child .container ul {
 }
 
 #comic > div:last-child > div:first-child #price-availability > div:last-child {
+  border-left: 1px solid gray;
   text-align: center;
+  padding: 10px 0;
   width: 20%;
+}
+
+#comic > div:last-child > div:first-child p {
+  margin: 20px 0;
 }
 
