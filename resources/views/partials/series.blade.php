@@ -20,7 +20,7 @@
                 @endforeach
             </div>
             <div>
-                <h3><a href="{{ asset('images/dc-logo.png') }}">LOAD MORE</a></h3>
+                <h3><a href="/">LOAD MORE</a></h3>
             </div>
         </div>
     </div>
@@ -34,31 +34,6 @@
                     </a>
                 </li>
             @endforeach
-
-            {{-- <li>
-                    <a href="">
-                        <img src="{{asset("images/dc-logo.png")}}" alt="">
-                        <span>DC MERCHANDISE</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        <img src="{{asset("images/dc-logo.png")}}" alt="">
-                        <span>SUBSCRIPTION</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        <img src="{{asset("images/dc-logo.png")}}" alt="">
-                        <span>COMIC SHOP LOCATOR</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        <img src="{{asset("images/dc-logo.png")}}" alt="">
-                        <span>DC POWER VISA</span>
-                    </a>
-                </li> --}}
         </ul>
     </div>
 
